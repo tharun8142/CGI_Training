@@ -1,0 +1,8 @@
+<b> New User</b>  <br>
+Usernname <input type="text"  (input)="name=$any($event.target).value"> <br>
+Password  <input type="text" (input)="password=$any($event.target).value"><br>
+Email     <input type="text" (input)="email=$any($event.target).value"><br>
+Mobileno   <input type="text" (input)="mobileno=$any($event.target).value"><br>
+<button on-click="registerClick()">Register</button>
+<button (click) ="cancelClick()">Cancel</button>
+

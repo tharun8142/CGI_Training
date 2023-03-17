@@ -1,0 +1,71 @@
+body {
+    font-size: 13px;
+    color: black;
+    font-family: Arial,sans-serif;
+}
+
+header {
+  text-align: center;
+}
+
+header img{
+  float: center;
+  width: 250px;
+  height: 250px;
+}
+
+#formContainer {
+float: center;
+  border: 1px solid silver;
+  border-radius: 5px;
+  padding: 20px;
+  width: 350px;
+  margin: auto;
+}
+
+input {
+   width: 98%;
+  height: 28px;
+  margin-top: 4px;
+  border: 1px solid silver;
+  border-radius: 3px;
+}
+
+select {
+  width:20%; 
+  height: 30px;
+  background-color: #e7e9ec;
+  border: 1px solid silver;
+  border-radius: 3px;
+}
+
+label {
+  font-weight: bold;
+}
+
+#passwordWarning {
+  font-size:11px;
+}
+
+#submitButton {
+  width: 100%;
+  height: 30px;
+  background: #f0c14b;
+  border-color: #a88734;
+  border-radius: 3px;
+  border-width: 1px;
+}
+
+.links {
+  color: #0066C0; 
+  text-decoration: none;
+  padding:20px;
+}
+.links:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+footer{
+  text-align: center;
+}

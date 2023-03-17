@@ -1,0 +1,11 @@
+header{
+    height: 13vh;
+    width: 100vw;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul li{display: inline;
+    padding: 10px;
+}

@@ -1,0 +1,25 @@
+<div *ngIf="items.length > 0" style="background-color: #f3f3f3; border: 1px solid #ccc; border-radius: 5px; padding: 10px; margin-bottom: 20px;">
+    <ul style="list-style: none; padding-left: 0;">
+      <li style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #ddd; padding: 10px 0;">
+        <span style="flex: 1;">Product</span>
+        <span style="width: 80px; text-align: center;">Price</span>
+        <span style="width: 80px; text-align: center;">Quantity</span>
+        <span style="width: 80px; text-align: center;">Total</span>
+      </li>
+      <li *ngFor="let item of items" style="display: flex; justify-content: space-between; align-items: center; padding: 10px 0;">
+        <span style="flex: 1;">{{ item.title }}</span>
+        <span style="width: 80px; text-align: center;">{{ item.price }}</span>
+        <span style="width: 80px; text-align: center;">{{ item.qty }}</span>
+        <span style="width: 80px; text-align: center;">{{ item.price * item.qty }}</span>
+        <button style="background-color: #f00; color: #fff; border: none; border-radius: 5px; padding: 5px 10px; margin-left: 10px;" (click)="removeItem(item)">Remove</button>
+      </li>
+    </ul>
+    <div style="display: flex; justify-content: flex-end; align-items: center; margin-top: 10px;">
+      <p style="margin-right: 20px;">Total Quantity: {{ totalQuantity }}</p>
+      <p style="margin-right: 20px;">Total Value: {{ totalValue }}</p>
+      <button style="background-color: #f90; color: #fff; border: none; border-radius: 5px; padding: 5px 10px;" (click)="clearCart()">Clear Cart</button>
+    </div>
+  </div>
+  <div *ngIf="items.length == 0" style="background-color: #f3f3f3; border: 1px solid #ccc; border-radius: 5px; padding: 10px; margin-bottom: 20px;">
+    <p>Your cart is empty.</p>
+  </div>
